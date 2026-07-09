@@ -4,7 +4,7 @@
 
 <p><strong>面向通用 MCU 裸机与轻量固件项目的 AI Agent 开发规则包。</strong></p>
 
-<p>适用于 STM32、GD32、Nuvoton 等不同芯片与厂商 SDK，重点约束工程事实确认、生成代码保护、非阻塞设计、外设边界、通信、错误处理、采样滤波和显示交互。</p>
+<p>适用于 STM32、GD32、Nuvoton 等不同芯片与厂商 SDK，重点约束工程事实确认、生成代码保护、非阻塞设计、外设边界、通信、错误处理、采样滤波、显示交互、Flash 资源和交付输出。</p>
 
 <p>
   <a href="https://github.com/zhujiu39/codex-mcu-baremetal-rules/blob/main/LICENSE">
@@ -129,8 +129,10 @@ rules/specs/comment_spec.md
 rules/specs/comm_protocol_spec.md
 rules/specs/error_handling_spec.md
 rules/specs/filter_spec.md
+rules/specs/flash_resource_spec.md
 rules/specs/key_spec.md
 rules/specs/oled_ui_spec.md
+rules/specs/delivery_spec.md
 ```
 
 ## 规则模块
@@ -141,8 +143,10 @@ rules/specs/oled_ui_spec.md
 | [`coding_style_spec.md`](rules/specs/coding_style_spec.md) | 通用 C 编码、非阻塞调度、外设调用、微秒时序和看门狗原则 |
 | [`comment_spec.md`](rules/specs/comment_spec.md) | 注释与接口说明规范，避免重型模板化注释 |
 | [`comm_protocol_spec.md`](rules/specs/comm_protocol_spec.md) | 外部通信、帧边界、缓冲区所有权、超时、重试和字段校验 |
+| [`delivery_spec.md`](rules/specs/delivery_spec.md) | 固件、资源、烧录文件、交付包、生产包和版本输出边界 |
 | [`error_handling_spec.md`](rules/specs/error_handling_spec.md) | 错误分类、显式处理、降级运行、复位诊断和看门狗配合 |
 | [`filter_spec.md`](rules/specs/filter_spec.md) | 采样链路、滤波算法选择、参数来源、阈值判断和 ADC 数据处理 |
+| [`flash_resource_spec.md`](rules/specs/flash_resource_spec.md) | W25Qxx/SPI Flash、图片资源、字库、RGB565、分区和资源固件生成 |
 | [`key_spec.md`](rules/specs/key_spec.md) | 按键、旋钮、触摸等人机输入的消抖、事件和交互边界 |
 | [`oled_ui_spec.md`](rules/specs/oled_ui_spec.md) | OLED、LCD、数码管等显示界面的刷新、布局和模块边界 |
 

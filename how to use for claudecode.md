@@ -50,8 +50,10 @@ https://github.com/zhujiu39/codex-mcu-baremetal-rules
    - `rules/specs/comm_protocol_spec.md`
    - `rules/specs/error_handling_spec.md`
    - `rules/specs/filter_spec.md`
+   - `rules/specs/flash_resource_spec.md`
    - `rules/specs/key_spec.md`
    - `rules/specs/oled_ui_spec.md`
+   - `rules/specs/delivery_spec.md`
 
 5. 安装完成后，读取 `CLAUDE.md`。
    后续你必须按 `CLAUDE.md` 的规则工作，尤其是：
@@ -61,7 +63,7 @@ https://github.com/zhujiu39/codex-mcu-baremetal-rules
    - 保护配置工具或厂商工具生成的代码
    - 不假设某一家芯片库、外设句柄、寄存器宏或工程结构一定存在
    - 硬件资源必须从工程配置、原理图说明、头文件或用户输入确认
-   - 通信、输入、采样、错误处理和显示等场景先读对应 `rules/specs` 文件
+   - 通信、输入、采样、错误处理、显示、Flash 资源和交付等场景先读对应 `rules/specs` 文件
 
 6. 最后给我一个简短结果：
    - 当前识别到的 MCU 工程路径
